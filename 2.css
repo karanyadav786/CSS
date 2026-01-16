@@ -1,0 +1,37 @@
+/*                                 CSS is CASE SENSITIVE LANGUAGE            */
+
+/*                                         COLOR PROPERTY 
+                             set the color the foreground  i.e. text,button, links                 */
+
+
+/*                                      BACKGROUND COLOR PROPERTY                             
+                            set the color of background            */
+
+
+/*                                        COLOR SYSTEM
+                     1. RGB - Red,Green,Blue (range from 0-255)
+                     2. Hexadecimal(rgb)- 000000 to ffffff (range from 00-ff)(0=0,10=A,11=b,12=c,13=d,14=e,15=f)
+                                                                                             */
+
+
+
+h1{
+    color:green;
+}
+
+button{
+    color:green;
+    background-color:azure;
+}
+
+body{
+    background-color:black;
+}
+
+h2{
+    color:rgb(255,0,255);
+}
+
+h3{
+    color:#ff00ff;
+}

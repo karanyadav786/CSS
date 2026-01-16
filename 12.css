@@ -1,0 +1,80 @@
+/*                                     BACKGROUND IMAGE                                              */
+
+/*                   used to set the image as background (on div , on body, etc) 
+                    background-image : url("image.jpg");                                              */
+
+/*                                     BACKGROUND SIZE                                           
+                        
+                  used to adjust  the background image to the  background-size
+                  background-size : cover / contain / auto   
+                  
+                  cover --- adjust the image itself to fully fit in the background 
+                        --- no empty space 
+                    
+                  contain--- full length image is fit into the container
+                           --- Empty space is there
+                           --- empty space can be -- repeat / no repeat 
+                           
+                   auto --- by default
+                        --- not perfectly fit */
+
+body{
+    background-image:url("nature.jpg");
+    background-size:cover;
+
+}
+
+#box1{
+     height:350px;
+     width:350px;
+     border:4px solid black;
+     display:inline-block;
+     color:white;
+     font-size:30px;
+
+     background-image: url("nature.jpg");
+     background-size:cover;
+
+}
+
+#box2{
+    height:350px;
+    width:350px;
+    border:4px solid black;
+    display:inline-block;
+    color:white;
+    font-size:30px;
+    
+    background-image: url("nature.jpg");
+    background-size:contain;
+
+}
+
+#box3{
+    height:350px;
+     width:350px;
+    border:4px solid black;
+    display:inline-block;
+    font-size:30px;
+    
+    background-image: url("nature.jpg");
+    background-size:contain;
+    background-repeat:no-repeat;
+
+}
+
+
+
+#box4{
+    height:350px;
+     width:350px;
+    border:4px solid black;
+    display:inline-block;
+    color:white;
+    font-size:30px;
+
+    background-image: url("nature.jpg");
+    background-size:auto;
+    
+
+}

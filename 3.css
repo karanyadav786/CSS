@@ -1,0 +1,35 @@
+ /*                                            SELECTORS         
+         1.Universal Selector (*): Apply for all the contents of the body
+         2.Element selector (h1): Apply to only particular tags
+         3.Id Selector (#) : Apply to particular Id only given in HTML tags via attribures 
+         4.Class Selector(.) :Apply to the tags belong to the same class 
+
+         # Element, ID and Class selector have more priority than Universal Selector
+         # ID and Class selctor have more priority than Element selector
+
+         # we cant start the id and class from numbers
+
+         # we can apply the style to  multiple selectors at one time . e.g: h1,#id,.myclass,h5{
+                                                                                        } 
+         
+*/
+
+*{
+    color:blue;
+}
+
+h1{
+    color:pink;
+}
+
+#BCS11136{
+    color:red;
+}
+
+.IOT639{
+    color:green;
+}
+
+
+
+

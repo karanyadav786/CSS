@@ -1,0 +1,65 @@
+/*                                              RELATIVE UNITS                                               
+                relative units are different measurements for different browser or for different elements         */
+
+
+/*            1.Percentage(%) --- defines the size as the relative of the element's parent object 
+                              --- means if parent height = 200 px , and if we set its child height = 30% 
+                                                                        then child's height = 60 px ;             */
+
+
+/*             2. em ---- font size of the element changes to the relative of  parents font size
+                     ---- width of the element changes to the font-size of its element ITSELF (NOT PARENT ELEMENT)*/
+
+
+/*              3. rem ---- root em
+                      ---- means font-size changes to the relative to the root element (root means html body tag) */
+
+/*              4.vh and vw -----Viewport height  and viewport width 
+                            ----- size adjust to the relative of the webpage size                           */
+
+#parent{
+    height:200px;
+    width: 200px;
+    background-color:olive;
+}
+
+#child{
+    height:50%;
+    width:30%;
+    margin-left:30%;                              /* parent ke width ke relative hoga */
+    margin-top:10%;
+    background-color:cadetblue;
+}
+
+
+#parent1{
+    height:200px;
+    width: 200px;
+    background-color:olive;
+
+    font-size:20px;
+}
+
+#child1{
+    height:50%;
+    background-color:cadetblue;
+
+    font-size:2em;                   /* 2em means 2*parents font-size */
+    width:3em;                        /* 3em means 3*font-size of itself */
+
+}
+
+
+
+
+#vh{
+    background-color:brown;
+    height:100vh;
+    width:300px;
+}
+
+#vw{
+    background-color:olivedrab;
+    height:300px;
+    width:100vw;
+}

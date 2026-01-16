@@ -1,0 +1,212 @@
+/*                                          DISPLAY  PROPERTY                                                   */
+
+/*                             display : block / inline / inline-block / none                                   */
+
+/*                    block ---  it takes full width                                                            */
+
+/*                    inline --- it takes only the required width (jitna tag ka content hai)                    */
+
+/*                    inline-block --- similar to inline 
+                                   --- we can change padding, margin(top & bottom)  , height & width (of content    area)                                                                        */
+
+/*                     none ---- to remove the element from the document/wepage flow                             */
+
+
+
+/*                                           VISIBILITY PROPERTY                                                 */
+
+/*                                           visiblility : hidden                                                 */
+
+
+/*                                Difference b/w display : none   and   visibility : hidden           
+            when visibility = hidden then the space for the element is reserved (khali rahegi)  
+            when display = none   then  NO space for the element is reserved (dusra element uski space le lega ) */
+
+
+
+/*                                        RGBA (Red , Green , Blue , Alpha )
+                        Alpa means opacity 
+                        opacity means color kitna light ya dark dikhega 
+                        OPACITY range from  ---- 0 to 1
+                        background-color : rgba(255,255,0,0.5)                                                    */
+
+
+#block{
+    background-color:pink;
+    display:inline;
+}
+
+#inline{
+    background-color:blueviolet;
+    display:block;
+}
+
+#box1{
+    height:100px;
+    width:100px;
+    background-color:aqua;
+    padding:25px;
+    margin:25px;
+    display:inline;
+
+}
+
+#box2{
+    height:100px;
+    width:100px;
+    background-color:blueviolet;
+    padding:25px;
+    margin:25px;
+    display:inline;
+
+}
+
+#box3{
+    height:100px;
+    width:100px;
+    background-color:chocolate;
+    padding:25px;
+    margin:25px;
+    display:inline;
+
+}
+
+
+
+
+
+#box4{
+    height:100px;
+    width:100px;
+    background-color:aqua;
+    padding:25px;
+    margin:25px;
+    display:inline-block;
+
+}
+
+#box5{
+    height:100px;
+    width:100px;
+    background-color:blueviolet;
+    padding:25px;
+    margin:25px;
+    display:inline-block;
+
+}
+
+#box6{
+    height:100px;
+    width:100px;
+    background-color:chocolate;
+    padding:25px;
+    margin:25px;
+    display:inline-block;
+
+}
+
+
+
+#box7{
+    height:100px;
+    width:100px;
+    background-color:aqua;
+    padding:25px;
+    margin:25px;
+    display:inline-block;
+
+}
+
+#box8{
+    height:100px;
+    width:100px;
+    background-color:blueviolet;
+    padding:25px;
+    margin:25px;
+    display:none;
+
+}
+
+#box9{
+    height:100px;
+    width:100px;
+    background-color:chocolate;
+    padding:25px;
+    margin:25px;
+    display:inline-block;
+
+}
+
+
+
+#box10{
+    height:100px;
+    width:100px;
+    background-color:aqua;
+    padding:25px;
+    margin:25px;
+    display:inline-block;
+
+}
+
+#box11{
+    height:100px;
+    width:100px;
+    background-color:blueviolet;
+    padding:25px;
+    margin:25px;
+    display:inline-block;
+    visibility:hidden;
+
+}
+
+#box12{
+    height:100px;
+    width:100px;
+    background-color:chocolate;
+    padding:25px;
+    margin:25px;
+    display:inline-block;
+
+}
+
+
+
+
+
+#box13{
+    height:100px;
+    width:100px;
+    padding:25px;
+    margin:25px;
+    display:inline-block;
+
+    background-color: rgba(255,0,0,0)
+
+}
+
+#box14{
+    height:100px;
+    width:100px;
+    padding:25px;
+    margin:25px;
+    display:inline-block;
+
+    background-color: rgba(255,0,0,0.5)
+
+}
+
+#box15{
+    height:100px;
+    width:100px;
+    padding:25px;
+    margin:25px;
+    display:inline-block;
+
+    background-color: rgba(255,0,0,1)
+
+}
+ 
+
+
+

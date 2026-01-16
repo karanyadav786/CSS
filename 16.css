@@ -1,0 +1,107 @@
+/*                                            ANIMATION                                                          */
+
+/*                  ---- we can apply different types of animation to the CSS elements  
+                    
+                    ---- there is no concept of element states - active / hover 
+                    
+                    ---- we are giving the animation to the elements with normal state                         */
+
+
+/*                                      KEYFRAMES     (firstly write keyframes)
+
+                    ---- 2 ways to write keyframe
+
+                    @keyframes _my_name_{
+                                         from {          }      -- starting mai aisa ho
+                                                                     --AFTER ANIMATION EFFECT--
+                                         to   {          }      -- end mai aisa ho jaye 
+                                        }
+                                         
+                    @keyframes _my_name_{
+                                         0%  {          }
+                                         27%  {          } 
+                                         50%  {          }
+                                         100%  {          }  
+                                        }                                                                     */
+
+
+
+/*                                    ANIMATION PROPERTIES                                               
+ 
+                         1.Animation-name : _my_name_        
+                                                     ---- name of the keyframes
+
+                         2.Animation-duration : 10ms / 4s / 10s 
+                                                     ---total KITNA TIME LEGA 1 animation effect ko change hone mai
+                  
+
+                         3.Animation-timing-function : ease-in / ease-out / linear / steps   
+
+                         4.Animation-delay: 10ms / 4s / 10s  
+                                                     ---- kitne time KE BAAD effect change hona start hoga (from starting page load)
+
+                         5.Animation-iteration-count : 1 / 2 / 10 / infinite    
+                                                     ---- animation effect kitni baar hoga element ke upar
+
+                         5.Animation-direction : normal / reverse / alternate / alternate-reverse 
+                                                     ---- if we have to move the element from first position        to second position and again to the first position 
+                         */
+
+
+
+
+
+
+#box1{
+    height:200px;
+    width:200px;
+    background-color:cadetblue;
+    border:2px solid black;
+
+    /* margin-top:200px;     
+    margin-left:200px;         --- we cannot apply proper animation effect to the element having limited margin
+                                    because animation needs unlimited space (can say in some effects / cases)  */
+
+    position:absolute;
+    top:200px;
+    left:200px; 
+
+
+    animation-name:karan;
+    animation-duration:7s;
+    animation-timing-function:ease;
+    animation-delay: 10s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+
+  /* animation:karan 7s ease 0s infinite alternate-reverse;        --------       SHORTHAND OF ANIMATION WRITING */
+
+
+}
+
+@keyframes karan{
+    0%{
+        font-size:25px;
+        border:2px solid black;
+        background-color:rgba(255,0,0,0.2);
+        transform:scale(1);
+        left:0px;
+
+    }
+     
+    50%{
+        font-size:30px;
+        border:7px solid black;
+        background-color: rgba(255,0,0,0.6);
+        transform:scale(2);
+
+    }
+
+    100%{
+        font-size:45px;
+        border:14px solid black;
+        background-color: rgba(255,0,0,1);
+        left:800px;
+        transform:scale(3);
+    }
+}

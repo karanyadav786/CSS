@@ -1,0 +1,80 @@
+/*                        HEADER CSS  */
+body{
+    border:5px solid black;
+}
+
+div{
+    height:40px;
+    background-color:#0f1111;
+}
+
+#nav{
+    font-size:25px;
+    color:#f08804;
+    text-decoration:none;
+    margin-right:200px;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    margin-right:200px;
+}
+
+input{
+    margin-left:140px;
+}
+
+button{
+    color:white;
+    background-color:#f08808;
+}
+
+
+
+/*                              MAIN(CONTENT AREA )  CSS */
+
+
+main{
+    height:640px;
+    background-color:rgba(15,17,17,0.75);
+    text-align: center;
+}
+
+#box1{
+    height: 150px;
+    width:100px;
+    border:5px solid black;
+    background-color:rgba(255,0,0,0.5);
+    display:inline-block;
+    margin:240px 25px 25px 25px;
+}
+
+#box2{
+    height: 150px;
+    width:100px;
+    border:5px solid black;
+    background-color:rgba(0,255,0,0.5);
+    display:inline-block;
+    margin:240px 25px 25px 25px;
+}
+
+#box3{
+    height: 150px;
+    width:100px;
+    border:5px solid black;
+    background-color:rgba(0,0,255,0.5);
+    display:inline-block;
+    margin:240px 25px 25px 25px;
+}
+
+
+
+
+/*                    FOOTER CSS */
+
+footer{
+    background-color:#0f1111;
+    color:white;
+    text-align:center;
+}

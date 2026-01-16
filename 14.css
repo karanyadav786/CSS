@@ -1,0 +1,49 @@
+/*                                          MEDIA  QUERIES                                                  */
+
+/*                      -- help to create a responsive website
+
+                        -- means for different dimensions of screen (laptop / mobile / ipad / touchpad ) 
+                        ,the webpage should be responsive , i.e. the text size ,image size etc should be change accordingly to the dimensions                                                         
+                        
+                        --- mainly changes for width dimension         
+                        
+                        --- min-width:600 px --------- greater than 600px
+                        --- max-width:600 px --------- less than 600px                                   */
+
+
+
+
+
+#box1{
+    height:200px;
+    width: 200px;
+    font-size:25px;
+    background-color:cornflowerblue;
+}
+
+@media(width:600px){
+    #box1{
+        font-size:50px;
+        background-color:red;
+    }
+}
+
+
+
+#box2{
+    height:400px;
+    width: 400px;
+    font-size:25px;
+    background-color:coral;
+}
+
+@media(min-width:700px) and (max-width:1000px){
+    #box2{
+        height: 80px;
+        width:80px;
+        font-size:15px;
+        background-color:deeppink;
+        border:2px double black;
+
+    }
+}

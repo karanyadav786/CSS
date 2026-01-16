@@ -1,0 +1,28 @@
+*{                              /* starting with 0 */
+    padding:0px;
+    margin:0px;
+}
+
+div{
+    height:60px;
+    background-color:#0f1111;
+}
+
+#nav{
+    font-size:25px;
+    color:#f08804;
+    text-decoration:none;
+    margin-right:200px;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    margin-right:200px;
+}
+
+button{
+    color:white;
+    background-color:#f08808;
+}
+

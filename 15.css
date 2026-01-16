@@ -1,0 +1,171 @@
+/*                                                  TRANSITION  EFFECT                                           */
+
+/*                --transition effect enables to define the transition between two states of an element 
+                  -- STATE means like jab aap hover / click / loading karte ho then wo element active state mai ho jaata hai  , apne normal state ko chod kar  
+                  
+                  -- some changes occur in the element during the change of the state in a element from 
+                  normal -- > active state                                                                      */
+
+
+/*                states : HOVER / ACTIVE                                                                      */
+
+
+/*                1.transition-property : all  
+                                         ---- property you want to the transition like width , font-size etc
+
+                  2.transition-duration : 10ms / 4s / 10s 
+                                         ---kitne time MAI effect change hoga
+                  
+                  3.transition-timing-function : ease-in / ease-out / linear / steps       
+                   
+                  4.transition-delays : 10ms / 4s / 10s  
+                                        ---- kitne time KE BAAD effect change hona start hoga                     */
+
+
+
+
+
+/*                                                 CSS TRANSFORM                                                  */
+
+/*                    ROTATE ---  used to apply 2D / 3D tranformation to an  element
+
+                     1.transform : rotate(45degree)  
+                                    OR 
+                     2.rotate : 45deg
+                     
+                     3.rotate : X 45deg    ------  for 3D
+                     
+                     4.rotate : Y 45deg     ------  for 3D
+                     
+                     5.rotate : Z 45deg       ------  for 3D                                              */
+
+
+                      
+/*                    SCALE --- used to largening and smallering the object                                     */
+
+/*                   1.transform : scale(2)     --- both for x and y axis
+                  
+                     2.transform : scale(0.5)   --- both for x and y axis
+                     
+                     3.transform : scale(2,5)   --- 2 for x-axis , 5 for y-axis
+                     
+                     4.transform : scaleX(1.2)  --- for x-axis only
+                     
+                     5.transform : scaleY(1.8)   --- for y-axis only                                             */
+                        
+
+
+/*                     TRANSLATE : to shift the element from one position to another position
+
+                      1.transform : translate(20px)       ---- shift 20px to x-axis , 20px to y-axis 
+                      
+                      2.transform : translate(20px,40px)  ---- shift 20px to x-axis , 40px to y-axis 
+                      
+                      3.transform : translateX(20px)       ---- shift 20px to x-axis 
+                      
+                      4.transform : translateY(20px)       ---- shift 20px to y-axis                         */
+                                
+
+
+/*                      SKEW ---- very interesting property 
+
+                       transform : skew(180deg);                      */
+
+
+
+#box1{
+    height:200px;
+    width:200px;
+    background-color:coral;
+    border:2px solid black;
+
+    transition-property:all;
+    transition-duration:7s;
+    transition-timing-function:steps(7);
+    transition-delay:7s;
+
+    /* transition:all 10s steps(7) 7s; */
+}
+
+#box1:hover{
+    height:300px;
+    width:300px;
+    background-color:fuchsia;
+    color:whitesmoke;
+    font-size:30px;
+    border:5px solid crimson;
+}
+
+#box1:active{
+    height:500px;
+    width:500px;
+    background-color:blue;
+    color:whitesmoke;
+    font-size:60px;
+    border:5px solid crimson;
+}
+
+
+
+
+
+#box2{
+    height:200px;
+    width:200px;
+    background-color:darksalmon;
+    border:2px solid black;
+    margin-left:500px;
+
+    transform:rotate(315deg);
+   
+
+}
+
+
+#box3{
+    height:200px;
+    width:200px;
+    background-color:darkorange;
+    border:2px solid black;
+    margin-left:500px;
+
+    transform:scale(3,0.5);
+   
+
+}
+
+#box4{
+    height:200px;
+    width:200px;
+    background-color:hotpink;
+    border:2px solid black;
+    margin-left:200px;
+    transition:all 5s ease-in-out 2s;
+}
+
+#box4:hover{
+     
+      transform:translate(100px,120px);
+}
+
+
+
+
+
+#box5{
+    height:200px;
+    width:200px;
+    background-color:darkcyan;
+    border:2px solid black;
+    margin-left:200px;
+    transition:all 5s ease-in-out 1s;
+}
+
+#box5:hover{
+     
+      transform:skew(360deg);
+}
+
+
+
+

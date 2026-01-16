@@ -1,0 +1,131 @@
+/*                                   POSITION PROPERTY                                                     */
+
+/*                    ---   sets how an element is positioned in a webpage or document flow
+                      ---   position : static / relative / absolute / fixed / sticky  
+                      ---   position property has 5 components -- top,bottom,left,right, z-index
+                      ---   z-index means kaunsa element overlapping ke dauran upar aayega ya neeche 
+                            By deafult jo element pehle likha hoga wo upaar hoga overlapping mai
+                            higher the number of z- index , means element upar hoga   */  
+                      
+                            
+
+/*                   1.Static --- default position 
+                               --- top , bottom,left,right, z-index properties have no effect on satic psition */
+
+/*                   2.Relative --- element is positioned relative to ITSELF
+                                --- top , bottom,left,right, z-index properties will work accordingly   */
+
+/*                   3.Absolute --- element is positioned to relative to its closest positioned ancestoral
+                                    here positioned means position should be Non-static
+                                --- Remove from the document flow (agla element iska space le lega)    */
+
+/*                    4. Fixed ---element is positioned to relative to the BROWSER/WEBPAGE
+                               --- Remove from the document flow (agla element iska space le lega) 
+
+                               --- element is positioned to FIXED in webpage 
+                                   means if we scroll down to webpage, but the fixed positioned element
+                                   wahi usi same position par tika rahega aur dikhta rahega
+                                   (used in Navigation Bar) */
+
+
+/*                    5.Sticky --- element is relative to the BROWSER/WEBPAGE
+                               --- positioned based on the user's scroll position 
+                               
+                               ---if we scroll down the webpage , neeche jakar jab ye sticky positioned wala element dikhega , uski position waha se wahi par fixed ho jayegi
+                               then after scroll down wo humko usi position par dikhta rahega      
+                               
+                               --- only left , top property will work                                   */
+
+
+
+
+
+
+
+
+#box1{
+    height:150px;
+    width:150px;
+    background-color:cadetblue;
+    display:inline-block;
+
+    position:static;
+    top:100px;               /*static means fixed . top property is not working in static positon */
+
+}
+
+#box2{
+    height:150px;
+    width:150px;
+    background-color:blueviolet;
+    display:inline-block;
+   
+    position:relative;              /* apne current position ke hisab se upar neeche change hoga  */
+    top:40px;                  
+    left:30px;
+}
+
+#box3{
+    height:150px;
+    width:150px;
+    background-color:darkmagenta;
+    display:inline-block;
+
+    position:absolute;         /* position change apne parents ke hisab se hoga  */ 
+    top:500px;
+    left:200px;
+
+
+}
+
+#box4{
+    height:150px;
+    width:150px;
+    background-color:hotpink;
+    display:inline-block;
+
+    position:fixed;           /* position change browser ke hisab se hoga and scroll karne par wo fixed rahega  */
+    right:0; 
+    top:0;
+
+}
+
+#box5{
+    height:150px;
+    width:150px;
+    background-color:coral;
+    display:inline-block;
+
+    position:sticky;           /* position change browser ke hisab se hoga
+                                ---if we scroll down the webpage , neeche jakar jab ye sticky positioned wala element dikhega , uski position waha se wahi par fixed ho jayegi
+                               then after scroll down wo humko usi position par dikhta rahega        */
+    left:300px; 
+    top:200px;
+
+}
+
+#zindex1{
+    height:200px;
+    width:200px;
+    background-color:darkolivegreen;
+    display:inline-block;
+    border:2px solid black;
+
+    position:relative;
+    top:20px;
+    left:50px;
+
+    z-index:-1;     
+}
+
+#zindex2{
+    height:200px;
+    width:200px;
+    background-color:aqua;
+    display:inline-block;
+    border:2px solid black;
+
+    position:static;
+
+    z-index:786;     
+}

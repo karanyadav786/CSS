@@ -1,0 +1,134 @@
+/*                                          TEXT PROPERTIES                                      */
+
+/*                   1.Text-Align : left / center / right / start / end 
+                                   (text align property is applied under the parent element/tag means text jo align hoga wo us parent ke tag ke andar mai hi center hoga)                                                         */
+
+
+/*                   2. Text-decoration : (Simple) underline / overline / line-through / none
+                                        :(combinations) red wavy/solid/double/dashed/dotted underline  
+                                                                                                */
+
+            
+/*                    3.Font Weight : lighter / normal / bold / bolder 
+                                    : 100-900 (range)                                             */
+
+    
+/*                    4.Font-Family : (single) arial / cursive / times new roman / tohama 
+                                      (multiple) arial , cursive , tohama  
+                                                 i.e. 1st wali nhi to 2nd wali 
+                                                                                                   */
+
+
+/*                    5. Font-size : 25px / 34px / any px
+                                      # ABSOLUTE UNIT IN CSS : PIXEL (px)
+                                      # 1 inch = 2.54 cm = 96 px                                  */
+ 
+  
+
+/*                     6. Line Height : 25px / 100px / any px / normal 
+                                        # text-size same rehata hai , sirf lines ke beech mai gap aata hai 
+                                        # line-height means distance b/w two lines              */
+
+
+/*                     7.Text Transform : uppercase / lowercase / capitalize / none  */
+
+
+
+
+
+#one{
+    text-align:center;
+}
+
+#two{
+    text-decoration:line-through;
+}
+
+a{
+    text-decoration:none;         /* remove the underline of the anchor tag's text */
+}
+
+#three{
+     text-decoration:red wavy underline;
+}
+
+
+
+
+
+
+
+#four{
+        font-weight:100;
+}
+
+#five{
+        font-weight:600;
+}
+
+#six{
+    font-weight:900;
+}
+
+#seven{
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+#eight{
+    font-family:cursive;
+}
+
+#nine{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+
+
+
+#ten{
+    font-size:50px;
+}
+
+#eleven{
+    font-size:10px;
+}
+
+
+
+
+
+
+
+
+#twelve{
+    line-height:5px;       /* lines overlap to each other because of very small pixel of lione-height) */
+}
+
+#thirteen{
+    line-height:100px;
+}
+
+
+
+
+
+
+
+
+#fourteen{
+    text-transform:uppercase;
+}
+
+#fifteen{
+    text-transform:capitalize;
+}
